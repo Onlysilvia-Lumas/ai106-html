@@ -3,33 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AI106 HTML project boilerplate" />
-    <title>AI106 HTML</title>
+    <meta name="description" content="Corporate Website - Company Information, Client Login, and Contact" />
+    <title>TechCorp - Your Innovation Partner</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Navigation Header -->
     <header class="site-header">
-      <h1>AI106 HTML</h1>
-      <p class="tagline">Starter boilerplate — edit and build from here.</p>
+      <div class="header-container">
+        <div class="logo">TechCorp</div>
+        <nav class="nav-links">
+          <a href="#company" class="nav-link">Company</a>
+          <a href="#login" class="nav-link">Client Login</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main id="main">
-      <section class="card" aria-labelledby="welcome-heading">
-        <h2 id="welcome-heading">Welcome</h2>
-        <p>
-          This project includes separate HTML, CSS, and JavaScript files. Open
-          <code>index.html</code> in a browser or use a local dev server to
-          get started.
-        </p>
-        <button type="button" id="demo-button" class="button">
-          Try the demo
-        </button>
-        <p id="demo-output" class="demo-output" aria-live="polite"></p>
+      <!-- Company Information Section -->
+      <section id="company" class="section company-section">
+        <div class="section-content">
+          <h2 class="section-title">About TechCorp</h2>
+          <p class="section-description">
+            Leading innovation in digital solutions since 2015. We empower businesses with cutting-edge technology and strategic partnerships.
+          </p>
+          <div class="company-info">
+            <div class="info-card">
+              <h3>Our Mission</h3>
+              <p>To deliver transformative technology solutions that drive business growth and digital excellence.</p>
+            </div>
+            <div class="info-card">
+              <h3>Our Values</h3>
+              <p>Innovation, integrity, and customer-centric approach in everything we do.</p>
+            </div>
+            <div class="info-card">
+              <h3>Our Expertise</h3>
+              <p>Cloud solutions, AI integration, cybersecurity, and enterprise application development.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Login Section -->
+      <section id="login" class="section login-section">
+        <div class="section-content">
+          <h2 class="section-title">Client Login</h2>
+          <div class="login-card">
+            <form id="login-form" class="login-form">
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required />
+              </div>
+              <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required />
+              </div>
+              <div class="form-group checkbox">
+                <input type="checkbox" id="remember" name="remember" />
+                <label for="remember" class="checkbox-label">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+              <p class="login-footer">
+                Don't have an account? <a href="#" class="link">Request access</a>
+              </p>
+            </form>
+            <p id="login-message" class="login-message" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="section-content">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="info-item">
+                <span class="label">Email</span>
+                <p><a href="mailto:info@techcorp.com" class="link">info@techcorp.com</a></p>
+              </div>
+              <div class="info-item">
+                <span class="label">Phone</span>
+                <p><a href="tel:+1234567890" class="link">+1 (234) 567-890</a></p>
+              </div>
+              <div class="info-item">
+                <span class="label">Address</span>
+                <p>123 Innovation Drive<br />Tech City, TC 12345<br />United States</p>
+              </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="Your email" required />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p id="contact-message" class="contact-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> AI106 HTML</p>
+      <p>&copy; <span id="year"></span> TechCorp. All rights reserved.</p>
     </footer>
 
     <script src="js/main.js" defer></script>
